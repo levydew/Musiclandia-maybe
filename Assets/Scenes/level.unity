@@ -1242,6 +1242,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0da7be50a1f7da747a30b26479f791f1, type: 3}
   m_PrefabInstance: {fileID: 2081667025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1755959233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1755959234}
+  m_Layer: 0
+  m_Name: Leve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1755959234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755959233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 572.6031, y: 11.615943, z: 4101.2153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1788630671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1680,3 +1711,4 @@ SceneRoots:
   - {fileID: 1096231354}
   - {fileID: 504184363}
   - {fileID: 298950380}
+  - {fileID: 1755959234}

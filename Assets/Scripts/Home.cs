@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Gohome : MonoBehaviour
+public class Home : MonoBehaviour
 {
+    public string levelToLoad;
    void Gohome()
    {
     AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);

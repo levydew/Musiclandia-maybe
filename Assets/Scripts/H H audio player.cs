@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HHaudioplayer : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class HHaudioplayer : MonoBehaviour
     public AsyncController async;
     public GameObject youdontgettogoanywhere;
     
+    void Start()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log("Active Scene is '" + scene.name + "'.");
+    }
     
 
     private void OnTriggerEnter(Collider other)

@@ -11,11 +11,14 @@ public class HHaudioplayer : MonoBehaviour
     [SerializeField] public GameObject Audiotrigger;
     public AsyncController async;
     public GameObject youdontgettogoanywhere;
+    public string currentscene;
     
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
         Debug.Log("Active Scene is '" + scene.name + "'.");
+        currentscene = "Scenes/" + scene.name;
+        Debug.Log(currentscene);
     }
     
 
@@ -30,7 +33,12 @@ public class HHaudioplayer : MonoBehaviour
     {
        yield return new WaitUntil(() => audio.isPlaying == false);
        // or yield return new WaitWhile(() => audiosource.isPlaying == true);
-       
-        async.loadLevelBtn("Scenes/Levels/level2");
+       if(currentscene == "Scenes/level1"){
+        async.loadLevelBtn("Scenes/level2");
+       }
+        else
+        {
+            async.loadLevelBtn("Scenes/End1");
+        }
     }
 }

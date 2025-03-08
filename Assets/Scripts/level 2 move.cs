@@ -6,6 +6,6 @@ public class level2move : MonoBehaviour
 
     private void OnTriggerEnter(Collider load)
     {
-        async.loadLevelBtn("Scenes/Levels/level3");
+        async.loadLevelBtn("Scenes/level3");
     }
 }

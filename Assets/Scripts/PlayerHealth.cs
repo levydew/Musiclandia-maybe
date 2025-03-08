@@ -1,15 +1,20 @@
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-   public int health;
+   public float health;
+   public Slider healthbar;
 
-   public void TakeDamage(int damage)
+   public void TakeDamage(float damage)
    {
-        health -= damage;
-        Debug.Log("Health = " + health.ToString());
+         health -= damage;
+         healthbar.value = health;
    }
 
-   
+   void update()
+   {
+      healthbar.value = health;
+   }
 
 }

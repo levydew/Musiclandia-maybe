@@ -11,6 +11,7 @@ public class HHaudioplayer : MonoBehaviour
     public AsyncController async;
     public GameObject youdontgettogoanywhere;
     
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +24,7 @@ public class HHaudioplayer : MonoBehaviour
     {
        yield return new WaitUntil(() => audio.isPlaying == false);
        // or yield return new WaitWhile(() => audiosource.isPlaying == true);
+       
         async.loadLevelBtn("Scenes/Levels/level2");
     }
 }
